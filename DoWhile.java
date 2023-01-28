@@ -8,6 +8,8 @@ public class DoWhile {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		char ch;
+		int a,b,sum,mul,sub,div;
+		Scanner sc=new Scanner(System.in);
 		do{
 		System.out.println("Enter 1 for Addition");
 		System.out.println("Enter 2 for Substraction");
@@ -19,40 +21,35 @@ public class DoWhile {
 		switch(ch) {
 		case '1':
 			System.out.println("Enter First Value");
-			Scanner sc=new Scanner(System.in);
-			int a=sc.nextInt();
+			a=sc.nextInt();
 			System.out.println("Enter Second Value");
-			int b=sc.nextInt();
-			int sum=a+b;
+			b=sc.nextInt();
+			sum=a+b;
 			System.out.println("Addition of 2 number is "+sum);
 			break;
 		case '2':
 			System.out.println("Enter First Value");
-			Scanner sc1=new Scanner(System.in);
-			int a1=sc1.nextInt();
+			a=sc.nextInt();
 			System.out.println("Enter Second Value");
-			int b1=sc1.nextInt();
-			int sub=a1-b1;
+			b=sc.nextInt();
+			sub=a-b;
 			System.out.println("Substraction of 2 number is "+sub);
 			break;
 		case '3':
 			System.out.println("Enter First Value");
-			Scanner sc3=new Scanner(System.in);
-			int a2=sc3.nextInt();
+			a=sc.nextInt();
 			System.out.println("Enter Second Value");
-			int b2=sc3.nextInt();
-			int mul=a2*b2;
+			b=sc.nextInt();
+			mul=a*b;
 			System.out.println("Multiplication of 2 number is "+mul);
+			break;
 		case '4':
 			System.out.println("Enter First Value");
-			Scanner sc4=new Scanner(System.in);
-			int a3=sc4.nextInt();
+			a=sc.nextInt();
 			System.out.println("Enter Second Value");
-			int b3=sc4.nextInt();
-			int div=a3/b3;
+			b=sc.nextInt();
+			div=a/b;
 			System.out.println("Division of 2 number is "+div);
-			
-			
 					
 		}
 
